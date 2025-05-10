@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather Application</title>
+</head>
+<body>
+  <div class="container">
+    <script src="script.js" defer></script>
+    <h1>Weather Forecast Application</h1>
+    <div class="city-selection">
+      <div class="flex-col">
+        <div class="flex-col">
+          <select id="city1">
+            <option value="" disabled selected>Select First City</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Tiruchirappalli">Tiruchirappalli</option>
+            <option value="Salem">Salem</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="Erode">Erode</option>
+            <option value="Vellore">Vellore</option>
+            <option value="Thoothukudi">Thoothukudi</option>
+            <option value="Dindigul">Dindigul</option>
+            <option value="Thanjavur">Thanjavur</option>
+            <option value="Karur">Karur</option>
+            <option value="Namakkal">Namakkal</option>
+            <option value="Nagapattinam">Nagapattinam</option>
+            <option value="Kanyakumari">Kanyakumari</option>
+            <option value="Sivaganga">Sivaganga</option>
+            <option value="Ramanathapuram">Ramanathapuram</option>
+            <option value="Virudhunagar">Virudhunagar</option>
+            <option value="Thenkasi">Thenkasi</option>
+            <option value="Krishnagiri">Krishnagiri</option>
+            <option value="Ariyalur">Ariyalur</option>
+            <option value="Perambalur">Perambalur</option>
+            <option value="Dharmapuri">Dharmapuri</option>
+            <option value="Pudukkottai">Pudukkottai</option>
+            <option value="Cuddalore">Cuddalore</option>
+            <option value="Viluppuram">Viluppuram</option>
+            <option value="Thiruvarur">Thiruvarur</option>
+            <option value="Kallakurichi">Kallakurichi</option>
+            <option value="Mayiladuthurai">Mayiladuthurai</option>
+            <option value="Chengalpattu">Chengalpattu</option>
+            <option value="Tiruvannamalai">Tiruvannamalai</option>
+            <option value="Ranipet">Ranipet</option>
+            <option value="Tirupathur">Tirupathur</option>
+            <option value="Kancheepuram">Kancheepuram</option>
+            <option value="Tiruvallur">Tiruvallur</option>
+            <option value="Nilgiris">Nilgiris</option>
+            <option value="Tenkasi">Tenkasi</option>
+            <option value="Tiruppur">Tiruppur</option>
+          </select>
+        </div>
+        <div class="flex-col">
+          <select id="city2">
+            <option value="" disabled selected>Select Second City</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Tiruchirappalli">Tiruchirappalli</option>
+            <option value="Salem">Salem</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="Erode">Erode</option>
+            <option value="Vellore">Vellore</option>
+            <option value="Thoothukudi">Thoothukudi</option>
+            <option value="Dindigul">Dindigul</option>
+            <option value="Thanjavur">Thanjavur</option>
+            <option value="Karur">Karur</option>
+            <option value="Namakkal">Namakkal</option>
+            <option value="Nagapattinam">Nagapattinam</option>
+            <option value="Kanyakumari">Kanyakumari</option>
+            <option value="Sivaganga">Sivaganga</option>
+            <option value="Ramanathapuram">Ramanathapuram</option>
+            <option value="Virudhunagar">Virudhunagar</option>
+            <option value="Thenkasi">Thenkasi</option>
+            <option value="Krishnagiri">Krishnagiri</option>
+            <option value="Ariyalur">Ariyalur</option>
+            <option value="Perambalur">Perambalur</option>
+            <option value="Dharmapuri">Dharmapuri</option>
+            <option value="Pudukkottai">Pudukkottai</option>
+            <option value="Cuddalore">Cuddalore</option>
+            <option value="Viluppuram">Viluppuram</option>
+            <option value="Thiruvarur">Thiruvarur</option>
+            <option value="Kallakurichi">Kallakurichi</option>
+            <option value="Mayiladuthurai">Mayiladuthurai</option>
+            <option value="Chengalpattu">Chengalpattu</option>
+            <option value="Tiruvannamalai">Tiruvannamalai</option>
+            <option value="Ranipet">Ranipet</option>
+            <option value="Tirupathur">Tirupathur</option>
+            <option value="Kancheepuram">Kancheepuram</option>
+            <option value="Tiruvallur">Tiruvallur</option>
+            <option value="Nilgiris">Nilgiris</option>
+            <option value="Tenkasi">Tenkasi</option>
+            <option value="Tiruppur">Tiruppur</option>
+          </select>
+        </div>
+      </div>
+      <button id="compareBtn">Compare</button>
+    </div>
+
+    <div id="weatherDisplay" class="weather-display"></div>
+
+    <div class="favourites-section">
+      <h2>Favourite Cities</h2>
+      <div class="flex-col">
+        <select id="favouriteCities">
+          <option value="" disabled selected>Select a favourite city</option>
+        </select>
+        <button id="showFavouriteWeather">Show Weather</button>
+      </div>
+    </div>
+
+    <div id="favouriteWeatherDisplay" class="favourite-weather-display"></div>
+  </div>
+
+</body>
+</html>

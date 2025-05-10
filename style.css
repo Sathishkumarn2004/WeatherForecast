@@ -1,0 +1,256 @@
+ body {
+      background: linear-gradient(to bottom, #87CEEB, #E0F7FA);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      font-family: sans-serif;
+      color: #374151;
+      margin-top: 8px;
+    }
+
+    .container {
+      margin: 0 auto;
+      max-width: 1024px;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      text-align:center;
+      margin-bottom: 1.5rem;
+      color: #1e40af;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .city-selection {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 32px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .city-selection .flex-col {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .city-selection select {
+      padding: 12px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      outline: none;
+      width: 100%;
+      max-width: 600px;
+      min-width: 300px;
+      margin: 0 auto;
+    }
+
+    .city-selection select:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+    }
+
+    .city-selection select option[disabled] {
+      color: #9ca3af;
+    }
+
+    .city-selection button {
+      margin-top: 16px;
+      background-color: #22c55e;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .city-selection button:hover {
+      background-color:#22c55e;
+    }
+
+    .weather-display {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+
+    .weather-card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 35%;
+      max-width: 300px;
+      min-width: 200px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      margin: 0 auto;
+    }
+
+    .weather-card:hover {
+      transform: scale(1.02);
+    }
+
+    .weather-card h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+
+    .weather-icon {
+      font-size: 3rem;
+    }
+
+    .weather-card p.temp {
+      font-size: 1.875rem;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+
+    .weather-card p.condition,
+    .weather-card p.humidity {
+      color: #4b5563;
+    }
+
+    .weather-card button {
+      margin-top: 16px;
+      background-color: #22c55e;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .weather-card button:hover {
+      background-color: #16a34a;
+    }
+
+    .weather-card button.remove {
+      background-color: #ef4444;
+    }
+
+    .weather-card button.remove:hover {
+      background-color: #dc2626;
+    }
+
+    .favourites-section {
+      margin-top: 50px;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .favourites-section .flex-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .favourites-section select {
+      padding: 12px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      width: 100%;
+      outline: none;
+    }
+
+    .favourites-section select:focus {
+      border-color:#22c55e;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+    }
+
+    .favourites-section select option[disabled] {
+      color: #9ca3af;
+    }
+
+    .favourites-section button {
+      background-color:#22c55e;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .favourites-section button:hover {
+      background-color: #22c55e;
+    }
+
+    .favourite-weather-display {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+    }
+
+    .error-message {
+      text-align: center;
+      color: #ef4444;
+    }
+
+    @media (min-width: 640px) {
+      .city-selection .flex-col {
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      .city-selection button {
+        margin-top: 16px;
+        width: 100%;
+      }
+
+      .weather-display {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .weather-card {
+        margin-bottom: 0;
+      }
+
+      .favourite-weather-display {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .weather-card {
+        margin-bottom: 1rem;
+      }
+
+      .city-selection select {
+        width: 80%;
+      }
+
+      .weather-card {
+        width: 80%;
+      }
+    }
